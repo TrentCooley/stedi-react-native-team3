@@ -25,15 +25,17 @@ export default function Login(props){
 
 const styles = StyleSheet.create({
     login: {
-        flexDirection: 'row',
+        flexDirection: 'column',
         width: '100%',
         justifyContent: 'space-between',
         backgroundColor: 'green',
         height: '12%',
-        alignItems: 'flex-end',
+        alignItems: 'center',
         paddingBottom: 5,
         paddingLeft: 10,
         paddingRight: 10,
-        
+        // borderColor: 'black',
+        // borderWidth: '10px',
+        // borderStyle: 'solid',
       },
 })
