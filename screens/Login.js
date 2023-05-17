@@ -6,16 +6,15 @@ export default function Login(props){
         <View style={styles.login}>
             <Text>This is the Login Screen</Text>
             <Button title="Log In" onPress={()=>props.setUserLoggedIn(true)}></Button>
+
             <Text>Hello Nathanael</Text>
-            <Button title="NathanaelButton" onPress={()=>console.log("Hello Nathanael")}></Button>
+            <Button title="Nathanael Button" onPress={()=>console.log("Hello Nathanael")}></Button>
         
-
             <Text>Hello Trent</Text>
-            <Button title="TrentButton" onPress={()=>console.log("Hello Trent")}></Button>
+            <Button title="Trent Button" onPress={()=>console.log("Hello Trent")}></Button>
       
-
-            <Text>Brian's Button</Text>
-            <Button title="BrianButton" onPress= {console.log("Hello Brian")}></Button>
+            <Text>Hello Adrienne</Text>
+            <Button title="Adrienne Button" onPress= {()=>console.log("Hello Adrienne")}></Button>
 
         </View>
     )
@@ -29,13 +28,12 @@ const styles = StyleSheet.create({
         width: '100%',
         justifyContent: 'space-between',
         backgroundColor: 'green',
-        height: '12%',
         alignItems: 'center',
-        paddingBottom: 5,
+        paddingBottom: 10,
         paddingLeft: 10,
         paddingRight: 10,
-        // borderColor: 'black',
-        // borderWidth: '10px',
-        // borderStyle: 'solid',
+        paddingTop: 10,
+        marginTop: 'auto',
+        marginBottom: 'auto',
       },
 })
