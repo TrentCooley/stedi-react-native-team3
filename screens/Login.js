@@ -8,32 +8,34 @@ export default function Login(props){
             <Button title="Log In" onPress={()=>props.setUserLoggedIn(true)}></Button>
 
             <Text>Hello Nathanael</Text>
-            <Button title="Nathanael Button" onPress={()=>console.log("Hello Nathanael")}></Button>
+            <Button title="Nathanael Button" onPress = {()=>console.log("Hello Nathanael")}></Button>
         
             <Text>Hello Trent</Text>
-            <Button title="Trent Button" onPress={()=>console.log("Hello Trent")}></Button>
+            <Button title="Trent Button" onPress = {()=>console.log("Hello Trent")}></Button>
       
             <Text>Hello Adrienne</Text>
-            <Button title="Adrienne Button" onPress= {()=>console.log("Hello Adrienne")}></Button>
-
+            <Button title="Adrienne Button" onPress= {()=>sayHello("Adrienne")}></Button>
         </View>
     )
-    
 }
 
+function sayHello(name){
+    alert("Hello " + name);
+    console.log("Hello " + name);
+}
 
 const styles = StyleSheet.create({
     login: {
         flexDirection: 'column',
         width: '100%',
-        justifyContent: 'space-between',
-        backgroundColor: 'green',
+        // height: '100%',
+        justifyContent: 'center',
+        backgroundColor: 'palegreen',
         alignItems: 'center',
-        paddingBottom: 10,
-        paddingLeft: 10,
-        paddingRight: 10,
-        paddingTop: 10,
+        rowGap: 5,
         marginTop: 'auto',
         marginBottom: 'auto',
+        paddingBottom: 15,
+        paddingTop: 10,
       },
 })
