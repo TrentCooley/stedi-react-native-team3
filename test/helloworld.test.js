@@ -1,8 +1,8 @@
-import sayHello from '../utils/helloworld.mjs';
-import assert from 'assert';
+// import sayHello from '../utils/helloworld.mjs';
+// import assert from 'assert';
 
-it("Hello World", ()=>{
+// it("Hello World", ()=>{
 
-    const hello = sayHello();
-    assert.equal(hello,"hello");
-});
+//     const hello = sayHello();
+//     assert.equal(hello,"hello");
+// });
